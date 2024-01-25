@@ -1,0 +1,98 @@
+footer{
+  display: grid;
+  grid-template-columns: 260px 1144px auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer .gov{
+   
+  grid-column: 1;
+}
+footer .gov ul.flex{  
+  background-color: black;
+  gap: 10px;
+}
+footer .gov ul.flex li{
+   
+  border: 1px solid black;
+}
+footer .gov ul.flex li a{   
+  font-size: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*! height: 100%; */
+  padding: 12px;
+}
+footer .gov ul.flex li a:before{
+  content: "";
+  width: 95px;
+  height: 26px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+}
+footer .gov ul.flex li:nth-of-type(1) a::before{  
+  background-image: url(../img/logo-culture.png);
+}
+footer .gov ul.flex li:nth-of-type(2) a::before{  
+  background-image: url(../img/logo-rights.png);
+}
+footer .men{   
+  grid-column: 2;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+  background-color: white;
+}
+footer .men ul.flex{
+   
+  justify-content: space-around;
+  text-align: center;
+}
+footer .men ul.flex li{   
+  /*! align-items: center; */
+  /*! justify-content: center; */
+  padding: 12px;
+  display: block;
+  font-weight: 700;
+}
+footer .men ul.flex li a{
+   
+}
+footer .men ul.flex li:hover a{  
+  color: blue;
+}
+footer .num{   
+  grid-column: 3;
+  border-top: 5px solid black;
+  background-color: white;
+}
+footer .num ul.flex{   
+  display: grid;
+  grid-template-columns: auto auto auto 1fr auto auto;
+}
+footer .num ul.flex li{    
+  font-weight: 700;
+  font-size: 45.5px;
+}
+footer .num ul.flex li:nth-of-type(1){
+   grid-column: 1;
+}
+footer .num ul.flex li:nth-of-type(2){
+  grid-column: 2;
+}
+footer .num ul.flex li:nth-of-type(3){
+  grid-column: 3;
+}
+footer .num ul.flex li:nth-of-type(4){
+  grid-column: 5;
+}
+footer .num ul.flex li:nth-of-type(5){
+  grid-column: 6;
+}
+footer .num ul.flex li a{   
+  border-left: 5px solid;
+}

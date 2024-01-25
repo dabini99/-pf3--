@@ -1,0 +1,50 @@
+@media screen and (max-width:980px){
+  body{    
+  display: inherit;
+  }
+  header div.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  header div.left h1{  
+  width: 64px;
+  height: 32px;
+  padding-top: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+  header div.left a.look{
+  /*! transform: translateX(95px); */
+  position: absolute;
+  transform: inherit;
+  right: 20px;
+  top: 30px;
+  }
+  header div.left ul.gnb{    
+  display: none;
+  }
+  header div.left ul.logo{    
+  display: none;
+  }
+/*  title  */
+  section#title{    
+  border: inherit;
+  }
+  section#title div.middle adress{    
+  display: flex;
+  }
+  section#title div.middle div.uno img{    
+  display: none;
+  }
+  section#title div.middle div.uno img.mob{    
+  display: inherit;
+  }
+  section#title div.middle div.uno ul li{    
+  display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  }
+}

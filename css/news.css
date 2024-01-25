@@ -1,0 +1,60 @@
+section#news{
+  grid-column: 2;
+}
+section#news div.right{   
+  line-height: 1.2;
+  padding: 0 12px;
+}
+section#news div.right img{   
+  border-bottom: 8px solid black;
+  padding: 0 0 10px 0;
+  margin: 15px 0;
+}
+section#news div.right p{   
+  border: 1px solid black;
+  display: block;
+  width: 35px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+section#news div.right h2{   
+  font-weight: 700;
+  padding: 15px 0;
+}
+section#news div.right ul{
+   
+}
+section#news div.right ul li{   
+  font-weight: 700;
+}
+/* 2번 */
+section#news div.right2{   
+   line-height: 1.2;
+   padding: 0 12px;
+ }
+ section#news div.right2 img{
+    
+ }
+ section#news div.right2 p{   
+   border: 1px solid black;
+   display: block;
+   width: 30px;
+   text-align: center;
+   color: white;
+   background-color: black;
+   font-weight: bold;
+ }
+ section#news div.right2 h2{   
+   font-weight: 700;
+ }
+ section#news div.right2 ul{
+    
+ }
+ section#news div.right2 ul li{   
+   font-weight: 700;
+ }

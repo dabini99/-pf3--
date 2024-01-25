@@ -1,0 +1,99 @@
+body{
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+header{
+  grid-column: 1;
+  position: relative;
+  grid-row: 1;
+}
+header div.left{
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  /*! border-right: 5px solid black; */
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+header div.left h1{
+  font-size: 0;
+  background-image: url(../img/logo.svg);
+  background-size: cover;
+  background-position: center;
+  width: 236px;
+  height: 118px;
+  grid-row: 1;
+}
+header div.left a.look{   
+  font-size: 0;
+  background-image: url(../img/srch.svg);
+  width: 20px;
+  height: 19px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  grid-row: 2;
+  transform: translateX(195px);
+}
+header div.left ul.gnb{   
+  border-bottom: 8px solid black;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  grid-row: 3;
+  font-weight: 700;
+}
+header div.left ul.gnb li{   
+  border-top: 8px solid black;
+  padding: 20px 0 20px 15px;
+}
+header div.left ul.button{
+  grid-row: 4;
+  grid-template-columns: auto auto auto;
+  display: grid;
+  justify-items: center;
+}
+header div.left ul.button a.pus{   
+  font-size: 0;
+  background-size: cover;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  display: block;
+  /*! display: flex; */
+}
+header div.left ul.button a.pus:nth-of-type(1){
+  background-image: url(../img/insta.svg);
+}
+header div.left ul.button a.pus:nth-of-type(2){
+  background-image: url(../img/youtube.svg);
+}
+header div.left ul.button a.pus:nth-of-type(3){
+  background-image: url(../img/naver.svg);
+}
+header div.left ul.logo{
+
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  column-gap: 25px;
+}
+header div.left ul.logo a.sub{
+  
+  font-size: 0;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header div.left ul.logo a.sub:nth-of-type(1){
+
+  background-image: url(../img/logo2.png);
+  width: 110px;
+  height: 29px;
+}
+header div.left ul.logo a.sub:nth-of-type(2){
+
+  background-image: url(../img/logo3.png);
+  width: 90px;
+  height: 34px;
+}

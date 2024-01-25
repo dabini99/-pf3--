@@ -1,0 +1,211 @@
+main{
+  grid-column: 2 /span 3;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-row: 1;
+}
+section#title{
+  grid-column: 1;
+  border-right: 5px solid black;
+  box-sizing: border-box;
+  border-left: 5px solid black;
+}
+section#title div.middle{   
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+section#title div.middle adress{   
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-items: end;
+  column-gap: 10px;
+  padding: 20px 12px;
+}
+section#title div.middle adress span{
+  line-height: 1.5;
+}
+section#title div.middle adress span:nth-of-type(1){  
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: bold;
+}
+section#title div.middle adress span:nth-of-type(2){ 
+  grid-column: 3;
+  grid-row: 1;
+}
+section#title div.middle adress span:nth-of-type(3){ 
+  grid-column: 2;
+  grid-row: 2;
+  font-weight: bold;
+}
+section#title div.middle adress span:nth-of-type(4){  
+  grid-column: 3;
+  grid-row: 2;
+}
+section#title div.middle adress span:nth-of-type(5){  
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+section#title div.middle div.uno{   
+  display: flex;
+  /*! flex-wrap: wrap; */
+  gap: 10px;
+  padding: 0 12px;
+  flex-direction: column;
+  align-items: last baseline;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 48px 48px 110px auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+section#title div.middle div.uno img{   
+  grid-row: 1;
+  grid-column: 1 / span 4;
+}
+section#title div.middle div.uno img.mob{   
+  display: none;
+  grid-row: 1;
+  grid-column: 1 / span 4;
+}
+section#title div.middle div.uno p{   
+  border: 1px solid black;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  display: inline-block;
+}
+section#title div.middle div.uno p:nth-of-type(1){  
+  background-color: #a2f0b3;
+  grid-column: 1;
+  grid-row: 2;
+}
+section#title div.middle div.uno p:nth-of-type(2){  
+  background-color: black;
+  grid-column: 2;
+  grid-row: 2;
+}
+section#title div.middle div.uno p:nth-of-type(3){  
+  border: inherit;
+  grid-column: 3;
+  grid-row: 2;
+}
+section#title div.middle div.uno p:nth-of-type(2) a{   
+  color: white;
+}
+section#title div.middle div.uno p a:nth-child(2){
+  color: white;
+}
+section#title div.middle div.uno h2{   
+  font-weight: 700;
+  grid-column: 1 / span 4;
+  grid-row: 4;
+}
+section#title div.middle div.uno ul{
+   
+  grid-column: 1 / span 4;
+  grid-row: 5;
+  grid-template-rows: auto auto;
+  display: grid;
+}
+section#title div.middle div.uno ul li{   
+  line-height: 1.2;
+  width: 1110px;
+}
+section#title div.middle div.uno ul li:nth-child(1){  
+  font-weight: bold;
+  margin-bottom: 5px;
+  grid-row: 1;
+}
+/* 2번 */
+section#title div.middle div.dos{
+   
+}
+section#title div.middle div.dos img{
+   
+}
+section#title div.middle div.dos p{
+   
+}
+section#title div.middle div.dos p a{
+   
+}
+section#title div.middle div.dos h2{
+   
+}
+section#title div div.dos ul{
+   
+}
+section#title div div.dos ul li{
+   
+}
+/* 2번 디자인 되어 있는 것 */
+/* section#title div.middle div.uno{    
+   display: flex;
+   gap: 10px;
+   padding: 0 12px;
+   flex-direction: column;
+   align-items: last baseline;
+   grid-row: 2;
+   display: grid;
+   grid-template-columns: 48px 48px 110px auto;
+   grid-template-rows: auto auto auto auto auto;
+ }
+ section#title div.middle div.uno img{   
+   grid-row: 1;
+   grid-column: 1 / span 4;
+ }
+ section#title div.middle div.uno p{   
+   border: 1px solid black;
+   height: 22px;
+   text-align: center;
+   line-height: 22px;
+   display: inline-block;
+ }
+ section#title div.middle div.uno p:nth-of-type(1){  
+   background-color: #a2f0b3;
+   grid-column: 1;
+   grid-row: 2;
+ }
+ section#title div.middle div.uno p:nth-of-type(2){  
+   background-color: black;
+   grid-column: 2;
+   grid-row: 2;
+ }
+ section#title div.middle div.uno p:nth-of-type(3){  
+   border: inherit;
+   grid-column: 3;
+   grid-row: 2;
+ }
+ section#title div.middle div.uno p:nth-of-type(2) a{   
+   color: white;
+ }
+ section#title div.middle div.uno p a:nth-child(2){
+   color: white;
+ }
+ section#title div.middle div.uno h2{   
+   font-weight: 700;
+   grid-column: 1 / span 4;
+   grid-row: 4;
+ }
+ section#title div.middle div.uno ul{
+    
+   grid-column: 1 / span 4;
+   grid-row: 5;
+   grid-template-rows: auto auto;
+   display: grid;
+ }
+ section#title div.middle div.uno ul li{   
+   line-height: 1.2;
+   width: 1110px;
+ }
+ section#title div.middle div.uno ul li:nth-child(1){  
+   font-weight: bold;
+   margin-bottom: 5px;
+   grid-row: 1;
+ } */
