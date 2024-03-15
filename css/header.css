@@ -47,6 +47,12 @@ header div.left ul.gnb li{
   border-top: 8px solid black;
   padding: 20px 0 20px 15px;
 }
+header div.left ul.gnb li a{  
+  display: block;
+}
+header div.left ul.gnb li:hover{
+  background-color: #ddd;
+}
 header div.left ul.button{
   grid-row: 4;
   grid-template-columns: auto auto auto;
